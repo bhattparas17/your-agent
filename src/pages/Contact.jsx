@@ -128,12 +128,12 @@ function Contact() {
           <h2 className="text-3xl font-bold text-blue-700 mb-6">Contact Info</h2>
           <p className="text-gray-700 mb-4">
             📍 Address: Off.: 312, NFC, New Delhi-110025, <br />
-            # Service Area: South Delhi & NCR
+            # Service Area: South Delhi & NCR, Faridabad, Noida
           </p>
           <p className="text-gray-700 mb-4">
             📞 Phone:{" "}
             <a href="tel:+919013497667" className="text-blue-700 hover:underline">
-              +91 90134 97667
+              +91 90134 97667 +91 9555123427
             </a>
           </p>
           <p className="text-gray-700 mb-4">

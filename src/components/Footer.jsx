@@ -35,7 +35,7 @@ function Footer() {
         <div>
           <h2 className="text-xl font-semibold mb-4">Get in Touch</h2>
           <p className="text-gray-300">📍 312, NFC, New Delhi - 110025</p>
-          <p className="text-gray-300">📞 +91 90134 97667</p>
+          <p className="text-gray-300">📞 +91 90134 97667 || +91 95551 23427</p>
           <p className="text-gray-300">
             ✉️ <a href="mailto:sharmarp.lic@gmail.com" className="hover:underline">sharmarp.lic@gmail.com</a>
           </p>
