@@ -4,7 +4,7 @@ import { useState } from "react";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-  <nav className="bg-blue-700/80 backdrop-blur-lg text-white px-6 py-3 flex justify-between items-center relative rounded-2xl shadow-xl border border-blue-300 z-[9999]">
+    <nav className="mx-auto mt-4 w-[calc(100%-1.5rem)] sm:w-[calc(100%-3rem)] max-w-6xl bg-blue-700/80 backdrop-blur-lg text-white px-4 sm:px-6 py-3 flex items-center justify-between gap-3 rounded-2xl shadow-xl border border-blue-300 z-[9999]">
       <Link
         to="/"
         className="text-2xl font-extrabold text-white transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_#3b82f6] focus:outline-none"

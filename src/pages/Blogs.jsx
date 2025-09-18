@@ -6,20 +6,20 @@ function Blogs() {
     <div>
       {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center h-[40vh] flex items-center justify-center"
+        className="relative bg-cover bg-center min-h-[32vh] sm:min-h-[40vh] flex items-center justify-center px-4 text-center"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop')",
         }}
       >
         <div className="absolute inset-0 bg-blue-900/70"></div>
-        <h1 className="relative text-4xl md:text-5xl font-bold text-white z-10">
+        <h1 className="relative text-3xl sm:text-4xl md:text-5xl font-bold text-white z-10">
           Our Blogs
         </h1>
       </div>
 
       {/* Blog Cards */}
-      <div className="max-w-6xl mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto py-16 px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogs.map((blog) => (
           <Link
             to={`/blogs/${blog.id}`}

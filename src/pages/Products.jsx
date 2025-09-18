@@ -89,8 +89,8 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="py-10 px-4 md:px-20 bg-gray-100">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-blue-700">
+    <div className="py-10 px-4 sm:px-8 md:px-16 bg-gray-100">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-blue-700">
         Our Insurance Plans
       </h2>
 
@@ -122,7 +122,7 @@ const ProductsPage = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {current.map((product) => {
           const Icon = iconMap[product.category] || FaPiggyBank;
           const bg = bgColors[product.category] || "bg-gray-50";
@@ -134,20 +134,20 @@ const ProductsPage = () => {
               className={`relative rounded-xl p-6 shadow-lg hover:shadow-2xl transition duration-300 flex flex-col items-center text-center ${bg}`}
             >
               {/* Icon */}
-              <div className="mb-5 w-28 h-28 rounded-2xl bg-white flex items-center justify-center shadow-md">
+              <div className="mb-5 w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-white flex items-center justify-center shadow-md">
                 <Icon size={56} className={iconColor} />
               </div>
 
-              <h3 className="text-lg md:text-xl font-semibold text-blue-700 mb-2">
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-700 mb-2">
                 {product.title}
               </h3>
-              <p className="text-gray-700 text-sm md:text-base mb-4">
+              <p className="text-gray-700 text-sm sm:text-base mb-4">
                 {product.description}
               </p>
               <p className="font-bold text-gray-900">{product.price}</p>
 
               {/* Buttons */}
-              <div className="flex justify-center gap-3 mt-4">
+              <div className="flex flex-col sm:flex-row justify-center gap-3 mt-4 w-full">
                 <Link
                   to={`/products/${product.id}`}
                   className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"

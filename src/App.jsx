@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div style={{ padding: "20px" }}>
+      <main className="px-4 sm:px-6 lg:px-10 xl:px-16 py-6 sm:py-8">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
@@ -21,9 +21,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
-           <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </Router>
   );
