@@ -27,7 +27,9 @@ function Footer() {
             <li><a href="/" className="hover:text-white">Home</a></li>
             <li><a href="/about" className="hover:text-white">About Us</a></li>
             <li><a href="/products" className="hover:text-white">Products</a></li>
+            <li><a href="/blog" className="hover:text-white">Blog</a></li>
             <li><a href="/contact" className="hover:text-white">Contact Us</a></li>
+
           </ul>
         </div>
 
@@ -61,6 +63,15 @@ function Footer() {
       {/* Bottom Bar */}
       <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm relative">
         © {new Date().getFullYear()} Policy360. All Rights Reserved.<br />
+          {/* External Link */}
+          <a
+            href="https://saathi.licindia.co.in/s/ram-pukar-sharma/01500312"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-2 text-blue-300 hover:text-blue-500"
+          >
+            Visit LIC Saathi Profile
+          </a>
         <span className="block mt-2">Made with <span className="text-red-500">❤️</span> by Policy360</span>
         <button
           onClick={handleBackToTop}
