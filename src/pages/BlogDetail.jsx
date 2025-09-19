@@ -10,15 +10,15 @@ function BlogDetail() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto py-16 px-6">
+    <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6">
       <img
         src={blog.image}
         alt={blog.title}
-        className="w-full h-96 object-cover rounded-2xl shadow-lg mb-6"
+        className="w-full h-56 sm:h-72 md:h-96 object-cover rounded-2xl shadow-lg mb-6"
       />
       <p className="text-gray-500 mb-3">{blog.date}</p>
-      <h1 className="text-4xl font-bold text-blue-800 mb-6">{blog.title}</h1>
-      <p className="text-gray-700 text-lg whitespace-pre-line leading-relaxed mb-10">
+      <h1 className="text-3xl sm:text-4xl font-bold text-blue-800 mb-6 leading-tight">{blog.title}</h1>
+      <p className="text-gray-700 text-base sm:text-lg whitespace-pre-line leading-relaxed mb-10">
         {blog.content}
       </p>
       <Link

@@ -27,7 +27,7 @@ function Footer() {
             <li><a href="/" className="hover:text-white">Home</a></li>
             <li><a href="/about" className="hover:text-white">About Us</a></li>
             <li><a href="/products" className="hover:text-white">Products</a></li>
-            <li><a href="/blog" className="hover:text-white">Blog</a></li>
+            <li><a href="/blogs" className="hover:text-white">Blog</a></li>
             <li><a href="/contact" className="hover:text-white">Contact Us</a></li>
 
           </ul>
@@ -75,7 +75,14 @@ function Footer() {
         <span className="block mt-2">Made with <span className="text-red-500">❤️</span> by Policy360</span>
         <button
           onClick={handleBackToTop}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-full shadow transition focus:outline-none"
+          className="hidden sm:inline-flex absolute right-4 top-1/2 -translate-y-1/2 bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-full shadow transition focus:outline-none"
+          aria-label="Back to Top"
+        >
+          Back to Top
+        </button>
+        <button
+          onClick={handleBackToTop}
+          className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-blue-700 py-2 font-semibold text-white shadow transition hover:bg-blue-800 focus:outline-none sm:hidden"
           aria-label="Back to Top"
         >
           Back to Top
