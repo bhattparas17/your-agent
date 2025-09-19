@@ -4,7 +4,7 @@ import { useState } from "react";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="mx-auto mt-4 w-[calc(100%-1.5rem)] sm:w-[calc(100%-3rem)] max-w-6xl bg-blue-700/80 backdrop-blur-lg text-white px-4 sm:px-6 py-3 flex items-center justify-between gap-3 rounded-2xl shadow-xl border border-blue-300 z-[9999]">
+    <nav className="relative z-50 mx-auto mt-4 w-[calc(100%-1.5rem)] sm:w-[calc(100%-3rem)] max-w-6xl bg-blue-700/80 backdrop-blur-lg text-white px-4 sm:px-6 py-3 flex items-center justify-between gap-3 rounded-2xl shadow-xl border border-blue-300">
       <Link
         to="/"
         className="text-2xl font-extrabold text-white transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_#3b82f6] focus:outline-none"
@@ -34,8 +34,8 @@ function Navbar() {
       {menuOpen && (
         <>
           {/* Overlay to prevent background scroll and clipping */}
-          <div className="fixed inset-0 bg-black/30 z-[9998] md:hidden" onClick={() => setMenuOpen(false)}></div>
-          <div className="fixed left-0 w-full bg-blue-800/95 backdrop-blur-lg flex flex-col items-center py-4 z-[9999] md:hidden animate-fade-in rounded-b-2xl shadow-xl border-t border-blue-300" style={{ top: '64px' }}>
+          <div className="fixed inset-0 bg-black/30 z-40 md:hidden" onClick={() => setMenuOpen(false)}></div>
+          <div className="absolute left-0 right-0 top-full mt-3 bg-blue-800/95 backdrop-blur-lg flex flex-col items-center py-4 z-50 md:hidden animate-fade-in rounded-2xl shadow-xl border border-blue-300">
             <NavLink to="/" label="Home" onClick={() => setMenuOpen(false)} mobile />
             <NavLink to="/products" label="Products" onClick={() => setMenuOpen(false)} mobile />
             <NavLink to="/blogs" label="Blogs" onClick={() => setMenuOpen(false)} mobile />
