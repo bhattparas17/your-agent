@@ -7,10 +7,15 @@ function Navbar() {
     <nav className="relative z-50 mx-auto mt-4 w-[calc(100%-1.5rem)] sm:w-[calc(100%-3rem)] max-w-6xl bg-blue-700/80 backdrop-blur-lg text-white px-4 sm:px-6 py-3 flex items-center justify-between gap-3 rounded-2xl shadow-xl border border-blue-300">
       <Link
         to="/"
-        className="text-2xl font-extrabold text-white transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_8px_#3b82f6] focus:outline-none"
-        style={{ letterSpacing: '1px' }}
+        className="transition-transform duration-200 hover:scale-110 focus:outline-none"
+        aria-label="Home"
       >
-        Policy360
+        <img
+          src="https://iconape.com/wp-content/files/pt/209794/svg/209794.svg"
+          alt="LIC Logo"
+          className="h-10 w-auto object-contain drop-shadow-[0_0_8px_#3b82f6]"
+          style={{ maxWidth: '160px' }}
+        />
       </Link>
       {/* Hamburger Icon */}
       <button

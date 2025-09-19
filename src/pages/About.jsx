@@ -87,17 +87,17 @@ function About() {
           {[
             {
               name: "Rahul Sharma",
-              avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+              avatar: "https://i.pinimg.com/originals/d2/98/4e/d2984ec4b65a8568eab3dc2b640fc58e.jpg",
               text: "Policy360 made buying insurance so simple and stress-free. Highly recommended!",
             },
             {
               name: "Priya Mehta",
-              avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+              avatar: "https://tse2.mm.bing.net/th/id/OIP.goGuFeLTYND5OesWY1SqcgHaHa?pid=Api&P=0&h=180",
               text: "Great support and guidance. They really care about finding the best plan for you.",
             },
             {
               name: "Arjun Verma",
-              avatar: "https://randomuser.me/api/portraits/men/56.jpg",
+              avatar: "https://i.pinimg.com/originals/d2/98/4e/d2984ec4b65a8568eab3dc2b640fc58e.jpg",
               text: "Transparent policies and quick claim process. Very satisfied with their service!",
             },
           ].map((feedback, index) => (

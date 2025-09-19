@@ -116,6 +116,34 @@ function Home() {
           </Motion.div>
         </div>
       </div>
+      {/* FAQ Section */}
+      <div className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-700 mb-10 text-center drop-shadow-lg">Frequently Asked Questions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-blue-100 via-blue-50 to-white p-8 rounded-2xl shadow-xl border border-blue-200 hover:scale-105 transition-transform duration-300">
+              <h3 className="font-bold text-blue-700 text-xl sm:text-2xl mb-4">What types of insurance plans do you offer?</h3>
+              <p className="text-gray-800 text-lg sm:text-xl leading-relaxed">We offer a wide range of insurance plans including life, health, vehicle, and travel insurance to suit your needs.</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-100 via-blue-50 to-white p-8 rounded-2xl shadow-xl border border-blue-200 hover:scale-105 transition-transform duration-300">
+              <h3 className="font-bold text-blue-700 text-xl sm:text-2xl mb-4">How do I choose the right insurance plan?</h3>
+              <p className="text-gray-800 text-lg sm:text-xl leading-relaxed">Our experts can help you assess your requirements and recommend the best plan for you. Contact us for a personalized consultation.</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-100 via-blue-50 to-white p-8 rounded-2xl shadow-xl border border-blue-200 hover:scale-105 transition-transform duration-300">
+              <h3 className="font-bold text-blue-700 text-xl sm:text-2xl mb-4">How can I file a claim?</h3>
+              <p className="text-gray-800 text-lg sm:text-xl leading-relaxed">You can file a claim online through our website or contact our customer support for assistance. We ensure a quick and easy claim process.</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-100 via-blue-50 to-white p-8 rounded-2xl shadow-xl border border-blue-200 hover:scale-105 transition-transform duration-300">
+              <h3 className="font-bold text-blue-700 text-xl sm:text-2xl mb-4">What documents are required for buying insurance?</h3>
+              <p className="text-gray-800 text-lg sm:text-xl leading-relaxed">Generally, you need identity proof, address proof, and income documents. Requirements may vary based on the plan selected.</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-100 via-blue-50 to-white p-8 rounded-2xl shadow-xl border border-blue-200 hover:scale-105 transition-transform duration-300 md:col-span-2">
+              <h3 className="font-bold text-blue-700 text-xl sm:text-2xl mb-4">How do I contact customer support?</h3>
+              <p className="text-gray-800 text-lg sm:text-xl leading-relaxed">You can reach our customer support 24/7 via phone, email, or live chat. Visit our Contact Us page for details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
