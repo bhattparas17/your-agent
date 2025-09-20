@@ -15,6 +15,7 @@ function Navbar() {
           alt="LIC Logo"
           className="h-10 w-auto object-contain drop-shadow-[0_0_8px_#3b82f6]"
           style={{ maxWidth: '160px' }}
+          onClick={() => window.location.href = 'https://licagentncr.in/'}
         />
       </Link>
       {/* Hamburger Icon */}
