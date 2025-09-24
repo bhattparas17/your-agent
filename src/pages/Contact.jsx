@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion as Motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
@@ -18,27 +17,23 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .send(
-        "service_l8r92pj",
-        "template_4ivgobq",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        "AZkyyahPuns4LTNyU"
-      )
-      .then(
-        () => {
-          setSuccess(true);
-          setFormData({ name: "", email: "", subject: "", message: "" });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+
+    const { name, email, subject, message } = formData;
+
+    // Replace with your client email
+    const recipient = "sharmarp.lic@gmail.com";
+
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+
+    // Show success message and reset form
+    setSuccess(true);
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   const quotes = [
@@ -68,7 +63,7 @@ function Contact() {
           <h2 className="text-2xl sm:text-3xl font-bold text-blue-700 mb-6">Get in Touch</h2>
           {success && (
             <p className="text-green-600 mb-4">
-              Your message has been sent successfully!
+              Your message has been prepared in your email app!
             </p>
           )}
           <form className="space-y-4" onSubmit={handleSubmit}>
